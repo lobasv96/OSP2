@@ -63,24 +63,6 @@ public class CarListActivity extends AppCompatActivity {
         checkBox3 = findViewById(R.id.checkbox3);
         checkBox4 = findViewById(R.id.checkbox4);
 
-//        if (checkBox1 != null || checkBox2 != null ) {
-//            checkBox1.setChecked(update(CHECK_BOX_1));
-//            checkBox2.setChecked(update(CHECK_BOX_2));
-//            checkBox1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//                @Override
-//                public void onCheckedChanged(CompoundButton compoundButton, boolean one_isChecked) {
-//                    savePreferences(CHECK_BOX_1, one_isChecked);
-//                }
-//            });
-//            checkBox2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//                @Override
-//                public void onCheckedChanged(CompoundButton compoundButton, boolean two_isChecked) {
-//                    savePreferences(CHECK_BOX_2, two_isChecked);
-//                }
-//            });
-//        }
-
-
         imageViewButton = findViewById(R.id.imageViewButton);
         recyclerViewCars = findViewById(R.id.recyclerViewCars);
         viewModel = ViewModelProviders.of(this).get(CarViewModel.class);
@@ -119,20 +101,6 @@ public class CarListActivity extends AppCompatActivity {
         itemTouchHelper.attachToRecyclerView(recyclerViewCars);
 
     }
-
-    // созраним значения checkBox-ов (добавим обьект SharedPreferences)
-    private void savePreferences(String key, Boolean value) {
-        SharedPreferences preferences = this.getSharedPreferences(NAME, Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = preferences.edit();
-        editor.putBoolean(key, value);
-        editor.apply();
-    }
-    //метод будет возвращать значение preference
-    private boolean update(String key) {
-       SharedPreferences preferences = this.getSharedPreferences(NAME, Context.MODE_PRIVATE);
-       return preferences.getBoolean(key, false);
-    }
-
 
     public void getData() {
         LiveData<List<Car>> carFromDB = viewModel.getCars();
