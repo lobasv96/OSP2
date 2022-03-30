@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5sp"
+    app:cardCornerRadius="8dp"
+    tools:context=".pojo.Car">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/textViewCarName"
+            android:layout_width="260dp"
+            android:layout_height="18dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewLogo"
+            app:layout_constraintHorizontal_bias="0.083"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewVIN"
+            android:layout_width="260dp"
+            android:layout_height="18dp"
+            android:layout_margin="5dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewLogo"
+            app:layout_constraintHorizontal_bias="0.083"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCarName" />
+
+        <TextView
+            android:id="@+id/textViewColor"
+            android:layout_width="260dp"
+            android:layout_height="18dp"
+            android:layout_margin="8dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewLogo"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVIN" />
+
+        <CheckBox
+            android:id="@+id/checkbox1"
+            android:theme="@style/myCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/PP"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewColor" />
+
+        <CheckBox
+            android:id="@+id/checkbox2"
+            android:theme="@style/myCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/DOP"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/checkbox4"
+            app:layout_constraintHorizontal_bias="0.389"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewColor" />
+
+        <CheckBox
+            android:id="@+id/checkbox3"
+            android:theme="@style/myCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/Wash"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/checkbox4"
+            app:layout_constraintHorizontal_bias="0.776"
+            app:layout_constraintStart_toEndOf="@+id/checkbox1"
+            app:layout_constraintTop_toBottomOf="@+id/textViewColor" />
+
+        <CheckBox
+            android:id="@+id/checkbox4"
+            android:theme="@style/myCheckBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:text="@string/showroom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="76dp"
+            android:layout_height="59dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/logo"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.069"
+            android:contentDescription="@string/todo" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
+
