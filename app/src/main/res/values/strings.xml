@@ -5,12 +5,12 @@
     <string name="PP">П/П</string>
     <string name="DOP">ДОП</string>
     <string name="Wash">Мойка</string>
-    <string name="button_save">СОХРАНИТЬ</string>
     <string name="showroom">Шоурум</string>
     <string name="number_note">\"Номер заметки: \"</string>
     <string name="button_return">ВЫЙТИ</string>
     <string name="error_write_all_fields">Заполните все поля</string>
     <string name="todo">TODO</string>
+    <string name="button_save">ДОБАВИТЬ</string>
 
     <array name="colors">
         <item>Белый</item>

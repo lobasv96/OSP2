@@ -9,13 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OSP2">
-        <activity android:name=".screens.cars.AddCarActivity"
+        <activity android:name=".presentation.cars.screens.AddCarActivity"
             android:screenOrientation="portrait"
             >
         </activity>
         <activity
             android:icon = "@drawable/weel"
-            android:name=".screens.cars.CarListActivity"
+            android:name=".presentation.cars.screens.CarListActivity"
             android:screenOrientation="portrait"
             android:exported="true">
             <intent-filter>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".screens.cars.AddCarActivity">
+    tools:context=".presentation.cars.screens.AddCarActivity">
 
 
     <EditText
@@ -42,11 +42,13 @@
 
     <Button
         android:id="@+id/buttonSave"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:backgroundTint="@color/teal_700"
+        android:layout_width="231dp"
+        android:layout_height="30dp"
+        android:background="@drawable/button_save"
         android:text="@string/button_save"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:layout_margin="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,10 +56,11 @@
 
     <Button
         android:id="@+id/buttonReturn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
         android:layout_margin="15dp"
-        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textSize="14sp"
+        android:background="@drawable/button_out"
         android:textColor="@color/black"
         android:text="@string/button_return"
         app:layout_constraintEnd_toEndOf="parent"

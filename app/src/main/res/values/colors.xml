@@ -10,4 +10,9 @@
     <color name="light_gray">#D5D4C7</color>
     <color name="blue">#175E87</color>
     <color name="red2">#A40004</color>
+    <color name="light_blue">#64AAD0</color>
+    <color name="light_blue_two_variant">#93A8B4</color>
+    <color name="light_blue_tree_variant">#E8F1F5</color>
+    <color name="back">#F2FEFE</color>
+    <color name="back_night_one">#111F47</color>
 </resources>

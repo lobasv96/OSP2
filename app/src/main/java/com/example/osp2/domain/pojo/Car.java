@@ -1,4 +1,4 @@
-package com.example.osp2.pojo;
+package com.example.osp2.domain.pojo;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;

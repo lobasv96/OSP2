@@ -5,9 +5,8 @@ import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
-import androidx.room.Update;
 
-import com.example.osp2.pojo.Car;
+import com.example.osp2.domain.pojo.Car;
 
 import java.util.List;
 

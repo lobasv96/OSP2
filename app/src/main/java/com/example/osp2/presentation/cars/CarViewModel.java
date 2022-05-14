@@ -1,4 +1,4 @@
-package com.example.osp2.screens.cars;
+package com.example.osp2.presentation.cars;
 
 import android.app.Application;
 import android.os.AsyncTask;
@@ -8,7 +8,7 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
 import com.example.osp2.data.CarsDatabase;
-import com.example.osp2.pojo.Car;
+import com.example.osp2.domain.pojo.Car;
 
 import java.util.List;
 
@@ -16,6 +16,7 @@ public class CarViewModel extends AndroidViewModel {
 
     private static CarsDatabase carsDatabase; // создаем БД
     private LiveData<List<Car>> cars; // создаем обьект LiveData (хранит лист заметок)
+
 
     public CarViewModel(@NonNull Application application) {
         super(application);
@@ -68,7 +69,5 @@ public class CarViewModel extends AndroidViewModel {
             return null;
         }
     }
-
-
 
 }

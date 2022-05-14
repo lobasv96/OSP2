@@ -1,41 +1,41 @@
-package com.example.osp2.adapter;
+package com.example.osp2.presentation.cars.adapter;
 
-import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.ImageView;
-import android.widget.RadioButton;
-import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.osp2.R;
-import com.example.osp2.pojo.Car;
-
-import org.w3c.dom.Text;
+import com.example.osp2.domain.pojo.Car;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static android.content.Context.MODE_PRIVATE;
-
 public class CarsAdapter extends RecyclerView.Adapter<CarsAdapter.CarsViewHolder> {
 
     private List<Car> cars;
-
     public CarsAdapter(ArrayList<Car> cars) {
         this.cars = cars;
     }
-    private OnCarClickListener onCarClickListener;
+    public void setCars(List<Car> cars) {
+        this.cars = cars;
+        notifyDataSetChanged();
+    }
+    public List<Car> getCars() {
+        return cars;
+    }
 
+
+
+    private OnCarClickListener onCarClickListener;
     public void setOnCarClickListener(OnCarClickListener onCarClickListener) {
         this.onCarClickListener = onCarClickListener;
     }
-
     public interface OnCarClickListener {
         void onCarClick(int position);
     }
@@ -98,14 +98,5 @@ public class CarsAdapter extends RecyclerView.Adapter<CarsAdapter.CarsViewHolder
                 }
             });
         }
-    }
-
-    public void setCars(List<Car> cars) {
-        this.cars = cars;
-        notifyDataSetChanged();
-    }
-
-    public List<Car> getCars() {
-        return cars;
     }
 }

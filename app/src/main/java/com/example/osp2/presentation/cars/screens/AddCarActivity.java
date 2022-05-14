@@ -1,4 +1,4 @@
-package com.example.osp2.screens.cars;
+package com.example.osp2.presentation.cars.screens;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProviders;
@@ -9,13 +9,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.osp2.R;
-import com.example.osp2.data.CarsDatabase;
-import com.example.osp2.pojo.Car;
-import com.example.osp2.screens.cars.CarListActivity;
+import com.example.osp2.domain.pojo.Car;
+import com.example.osp2.presentation.cars.CarViewModel;
 
 public class AddCarActivity extends AppCompatActivity {
 
@@ -63,5 +61,4 @@ public class AddCarActivity extends AppCompatActivity {
             }
         });
     }
-
 }
