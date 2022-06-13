@@ -58,6 +58,7 @@ public class CarsAdapter extends RecyclerView.Adapter<CarsAdapter.CarsViewHolder
         holder.checkBox2.setChecked(false);
         holder.checkBox3.setChecked(false);
         holder.checkBox4.setChecked(false);
+
     }
 
 

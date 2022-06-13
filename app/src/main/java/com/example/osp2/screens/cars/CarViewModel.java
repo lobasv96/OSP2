@@ -2,6 +2,7 @@ package com.example.osp2.screens.cars;
 
 import android.app.Application;
 import android.os.AsyncTask;
+import android.widget.CheckBox;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
@@ -68,7 +69,5 @@ public class CarViewModel extends AndroidViewModel {
             return null;
         }
     }
-
-
 
 }

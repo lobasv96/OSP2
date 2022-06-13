@@ -62,7 +62,6 @@ public class CarListActivity extends AppCompatActivity {
         checkBox2 = findViewById(R.id.checkbox2);
         checkBox3 = findViewById(R.id.checkbox3);
         checkBox4 = findViewById(R.id.checkbox4);
-
         imageViewButton = findViewById(R.id.imageViewButton);
         recyclerViewCars = findViewById(R.id.recyclerViewCars);
         viewModel = ViewModelProviders.of(this).get(CarViewModel.class);
